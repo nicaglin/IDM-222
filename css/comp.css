@@ -1,0 +1,12 @@
+body {
+  background-color: #000;
+}
+
+header {
+  background-color: #d1e3fa;
+}
+
+main,
+#selfpic {
+  width: 50%;
+}

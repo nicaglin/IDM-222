@@ -1,0 +1,13 @@
+header {
+  text-align: left;
+}
+
+main {
+  padding-right: 1rem;
+  width: 60%;
+  float: left;
+}
+
+#selfpic {
+  width: 40%;
+}
