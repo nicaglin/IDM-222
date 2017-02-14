@@ -6,6 +6,16 @@ html {
 
 h1 {font-size: 1.5rem;}
 
+.wrap {
+  display: flex;
+  flex-direction: row;
+}
+
+body {
+  background-color: #444; /*dark grey*/
+  color: #efefef;
+  font-size: 1rem;
+}
 header {
 	font-family: Century, Arial, serif;
 	font-size: .88rem;
@@ -13,14 +23,9 @@ header {
 	color: black;
 	text-align: center;
   padding: 1rem;
+  align-self: stretch;
+  width: 100vw;
 }
-
-body {
-	background-color: #000000;
-	color: #e4e4ed;
-	font-size: 1rem;
-}
-
 nav ul li {
   list-style: none;
   text-decoration: none;
@@ -34,44 +39,6 @@ footer {
 #selfpic {
   background-color: #4DC0FF;
   padding: 1rem;
-}
-
-.row {
-  overflow: auto;
-  margin-bottom: 16px;
-}
-.row::after {
-    content: "";
-    clear: both;
-    display: block;
-}
-
-[class*="col-"] {
-  border: 1px;
-  padding: 16px;
-  width: 100%;
-}
-
-[class*="col-"] {
-    border: 1px;
-  }
-  .[class*="col-"] {
-    border: 1px;
-  }
-  .col-1 {width: 25%;}
-  .col-2 {width: 50%;}
-  .col-3 {width: 75%;}
-  .col-4 {width: 100%;}
-
-  [class*="col-"] {
-    float: left;
-  }
-
-#con {
-  transition: background-color 6s ease-in-out 2s;
-  background-color: white;
-  color: black;
-  width: 100%;
 }
 
 #accordian a {
@@ -99,75 +66,30 @@ footer {
 
 @media (min-width: 37.5rem) {
   /* 600px */
-  .wrap {
-    overflow: auto;
-    width: 100%;
+  body {
+    background-color: orange;
   }
-
   header {
-    text-align: left;
+    text-align: right;
   }
 
   main {
-  	float: left;
     padding-right: 1rem;
    }
 
-  #selfpic {
+  /*#selfpic {
     width: 40%;
-  }
-
-[class*="col-"] {
-    border: 1px;
-  }
-  .col-1 {width: 10%;}
-  .col-2 {width: 20%;}
-  .col-3 {width: 30%;}
-  .col-4 {width: 40%;}
-  .col-5 {width: 50%;}
-  .col-6 {width: 60%;}
-  .col-7 {width: 70%;}
-  .col-8 {width: 80%;}
-  .col-9 {width: 90%;}
-  .col-10 {width: 100%;}
-
-  [class*="col-"] {
-    float: left;
-  }
-
+  }*/
 }
 
 @media (min-width: 56.25rem) {
   /* 900px */
   body {
     background-color: #000;
-  }
-
-  header {
-    background-color: #d1e3fa;
-  }
-
-  #selfpic{
     width: 100%;
   }
-
-  [class*="col-"] {
-    border: 1px;
-  }
-  .col-1 {width: 8.33%;}
-  .col-2 {width: 16.66%;}
-  .col-3 {width: 25%;}
-  .col-4 {width: 33.33%;}
-  .col-5 {width: 41.66%;}
-  .col-6 {width: 50%;}
-  .col-7 {width: 58.33%;}
-  .col-8 {width: 66.66%;}
-  .col-9 {width: 75%;}
-  .col-10 {width: 83.33%;}
-  .col-11 {width: 91.66%;}
-  .col-12 {width: 100%;}
-
-  [class*="col-"] {
-    float: left;
+  header {
+    background-color: #d1e3fa;
+    text-align: left;
   }
 }
