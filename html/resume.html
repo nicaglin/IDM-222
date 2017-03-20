@@ -2,38 +2,38 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+	<meta name="viewport" content="initial-scale=1.0, width=device-width"/>
 	<link rel="stylesheet" href="../css/normalize.css">
-  	<link rel="stylesheet" href="../css/main.css">
-  	<!-- <link rel="stylesheet" href="../css/mobile.css">
-  	<link rel="stylesheet" href="../css/tablet.css" media="screen and (min-width: 768px)">
-  	<link rel="stylesheet" href="../css/comp.css" media="screen and (min-width: 1024px)"> -->
+  	<link rel="stylesheet" href="../css/most.css">
+  	<link href="https://fonts.googleapis.com/css?family=Chewy" rel="stylesheet">
+  	<link href="https://fonts.googleapis.com/css?family=Kalam" rel="stylesheet">
+  	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<title>Resume</title>
 </head>
 
 <body>
 	<div id="wrap">
 		<header>
-			<p><br></p>
-			<h1>Creditials</h1>
 			<div id="logo"> <!--placeholder--></div>
-			<div class="navbar">
-			<nav>
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="about.html">About</a></li>
-					<li><a href="resume.html">Resume</a></li>
-					<li><a href="samples.html">Samples</a></li>
-					<li><a href="contact.html">Contact</a></li>
-				</ul>
-			</nav>
-		</div>
+			<span style="font-size:50px;" onclick="openNav()">&#9776;</span>
+			<div id="myNav" class="overlay">
+  				<a href="javascript:void(0)" id="goaway" class="closebtn" onclick="closeNav()">&times;</a>
+  				<div class="overlay-content">
+				    <a href="index.html">Home</a>
+				    <a href="samples.html">Samples</a>
+				    <a href="resume.html">Resume</a>
+				    <a href="about.html">About</a>
+				    <a href="contact.html">Contact</a>
+  				</div>
+			</div>
 		</header>
-		<h1>Veronica Lin</h1>
+		<main>
+		<div id="resumeD">
+		<div id="butt">
 		
-		<div id="accordian">
-		 
-		<h2><a href="#S1">Education</a></h2>
+		<div class="col">
+		<h1 id="name">Veronica Lin</h1>
+		<h2>Education</h2>
 			<div id="S1">
 			<ul>
 				<li>Drexel University, 2016-present</li>
@@ -42,7 +42,7 @@
 			</ul>
 		</div>
 
-		<h2><a href="#S2">Experience</a></h2>
+		<h2>Experience</h2>
 			<div id="S2"><h3>Women in Math, Science, and Engineering</h3>
 			<h4>Peer Leader</h4>
 			<h5>2015-2016</h5>
@@ -69,7 +69,7 @@
 			</ul>
 
 			<h3>CS 196</h3>
-			<h4>Head of Graphics of the Web Development Team</h4>
+			<h4>Head of Graphics</h4>
 			<h5>2014</h5>
 			<ul>
 				<li>Contributed to the creation of the website featuring all of the other companies</li>
@@ -85,8 +85,9 @@
 				<li>Traveled to each club and attended seasonal board meetings for the district</li>
 			</ul>
 		</div>
-		
-		<h2><a href="#S3">Service</a></h2>
+		</div><!-- col end -->
+		<div class="col" id="moveDownCol">
+		<h2>Service</h2>
 			<div id="S3">
 			<ul>
 				<li>Logged over 104 hours of service, 2012-2013</li>
@@ -94,7 +95,7 @@
 				<li>Participated in Kid’s Against Hunger, 2011-2014</li>
 			</ul>
 			</div>
-		<h2><a href="#S4">Honors and Awards</a></h2>
+		<h2>Honors and Awards</h2>
 			<div id="S4">
 			<ul>
 				<li>Placed first in a travia contest, 2016</li>
@@ -107,21 +108,22 @@
 			</ul>
 			</div>
 
-		<h2><a href="#S5"Skills></a></h2>
+		<h2>Skills</h2>
 			<div id="S5">
 			<ul>
-				<li>Proficient in English, Chinese (Mandarin), and basic Spanish </li>
-				<li>Working knowledge of Python, Java, HTML, CSS</li>
-				<li>Advanced experience with Adobe Photoshop</li>
+				<li>Proficient in English, spoken Chinese (Mandarin), and basic Spanish </li>
+				<li>Working knowledge of Python, Java, HTML, CSS, Javascript</li>
+				<li>Advanced experience with Adobe Photoshop, Illustrator</li>
 			</ul> 
 			</div>
-		</div>
-
+		</div><!-- col end -->
+		</div><!-- butt end -->
+		</div><!-- res end -->
+		</main>
 		<footer>
-			<div class="foot">
-				<ul> <li><p> Copyright &copy; 2017 Veronica Lin</p></li>
-				<li><p>Veronica.Lin@drexel.edu</p></li></ul></div>
+				<p>&copy; 2017 Veronica G Lin</p>
 		</footer>
-	</div> <!-- wrap end -->
+	</div><!-- wrap end -->
+	<script src="../js/main.js"></script>
 </body>
 </html>

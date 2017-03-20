@@ -2,69 +2,68 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+	<meta name="viewport" content="initial-scale=1.0, width=device-width"/>
 	<link rel="stylesheet" href="../css/normalize.css">
-  	<link rel="stylesheet" href="../css/main.css">
-  	<!-- <link rel="stylesheet" href="../css/mobile.css">
-  	<link rel="stylesheet" href="../css/tablet.css" media="screen and (min-width: 768px)">
-  	<link rel="stylesheet" href="../css/comp.css" media="screen and (min-width: 1024px)"> -->
+  	<link rel="stylesheet" href="../css/new.css">
+  	<link href="https://fonts.googleapis.com/css?family=Chewy" rel="stylesheet">
+  	<link href="https://fonts.googleapis.com/css?family=Kalam" rel="stylesheet">
+  	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<title>Veronica Lin</title>
 </head>
-
 <body>
 	<div id="wrap">
 		<header>
-			<p><br></p>
-			<h1>Veronica Lin</h1>
 			<div id="logo"> <!--placeholder--></div>
-			<div class="navbar">
-			<nav>
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="about.html">About</a></li>
-					<li><a href="resume.html">Resume</a></li>
-					<li><a href="samples.html">Samples</a></li> 
-					<li><a href="contact.html">Contact</a></li>
-				</ul>
-			</nav></div>
+			<span style="font-size:50px;" onclick="openNav()">&#9776;</span>
+			<div id="myNav" class="overlay">
+  				<a href="javascript:void(0)" id="goaway" class="closebtn" onclick="closeNav()">&times;</a>
+  				<div class="overlay-content">
+				    <a href="index.html">Home</a>
+				    <a href="samples.html">Samples</a>
+				    <a href="resume.html">Resume</a>
+				    <a href="about.html">About</a>
+				    <a href="contact.html">Contact</a>
+  				</div>
+			</div>
 		</header>
-
-		<main>
-		<div class="puzz">
-	    	<div class="row">
-	      		<div class="col-4">
-	      			<a href="about.html">
-	      			<picture>
-     				 <source media="(min-width: 650px)" srcset="../D_01.jpg">
-     				 <source media="(min-width: 465px)" srcset="../T_01.jpg">
-     				<img src="../speech_M.jpg" alt="speaker">
-    				</picture>
-    				</a>
-	      			<div class="figcaption">About</div>
-	      		</div>
-	      		<div class="col-4">
-	        		<a href="resume.html"><img src="" alt="giving a speech at graduation"></a>
-	      			<div class="figcaption">Resume</div>
-	      		</div>
-	      	</div>
-	      	<div class="row">
-	      		<div class="col-4">
-	        		<a href="samples.html"><img src="" alt="pug"></a>
-	      			<div class="figcaption">Samples</div>
-	      		</div>
-	      		<div class="col-4">
-	        		<a href="contact.html"><img src="" alt="pictured rocks"></a>
-	      			<div class="figcaption">Contact</div>
-	      		</div>
-	      	</div>
-	      </div>
+		<main> <div class="import">
+			<div id="foil" class="col">
+			 	<picture id="derpderp">
+	 				 <source media="(min-width: 650px)" srcset="../img/smallercity.jpg">
+	 				 <source media="(min-width: 465px)" srcset="../img/city.jpg">
+	 				<img src="../img/triL.jpg" alt="city at night from a plane">
+    			</picture>
+				<h1>Veronica Lin</h1>
+				<h2>designer | developer | student</h2>
+			</div>
+			<div class="col">
+				<div id="prettyPic" class="quarters">
+					<div id="samp"><h1>Samples</h1></div>
+					<div id="sampButt" class="buttonz">
+					<a href="samples.html"><h2>See More Sample Work</h2></a></div>
+				</div><!-- need back img -->
+				<div id="coffee" class="quarters">
+					<div id="res"><h1>Resume</h1></div>
+					<div id="resButt" class="buttonz">
+					<a href="resume.html"><h2>See Qulifications</h2></a></div>
+				</div><!-- need back img -->
+				<div id="mePic" class="quarters">
+					<div id="about"><h1>About</h1></div>
+					<div id="aboutButt" class="buttonz">
+					<a href="about.html"><h2>Learn More About Me</h2></a></div>
+				</div><!-- need back img -->
+				<div id="dog" class="quarters">
+					<div id="contact"><h1>Contact</h1></div>
+					<div id="contactButt" class="buttonz">
+					<a href="contact.html"><h2>Contact Me</h2></a></div>
+				</div><!-- need back img -->
+			</div>
+</div>
 		</main>
-		
 		<footer>
-			<div class="foot">
-				<ul> <li><p> Copyright &copy; 2017 Veronica Lin</p></li>
-				<li><p>Veronica.Lin@drexel.edu</p></li></ul></div>
+				<p>&copy; 2017 Veronica G Lin</p>
 		</footer>
-	</div><!-- wrap -->
+	</div><!-- wrap end -->
+	<script src="../js/main.js"></script>
 </body>
 </html>
