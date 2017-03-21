@@ -155,14 +155,6 @@ span {
 	border-color: black;
 }
 
-footer {
-	position: fixed;
-	width: 100vw;
-	top: 90%;
-	text-align: center;
-	font-family: $fontB;
-	font-size: .8rem;
-}
 #resumeD {
 	background-color: lavender;
 	display: flex;
@@ -285,6 +277,18 @@ footer {
 		}
 
 }
+.buttbutt {
+	z-index: 21;
+}
+
+footer {
+	position: fixed;
+	width: 100vw;
+	top: 90%;
+	text-align: center;
+	font-family: $fontB;
+	font-size: .8rem;
+}
 
 @media (min-width: 37.5rem) {
   /* 600px */
@@ -308,7 +312,8 @@ footer {
 		flex: 1 0 50%;
 		flex-wrap: wrap;
 		flex-direction: column;
-		width: 50vw;
+		max-width: 50vw;
+		overflow: hidden;
 	}
 	#foil{
 		height: 100vh;
