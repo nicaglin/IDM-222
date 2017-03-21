@@ -353,24 +353,24 @@ footer {
 	}
 	#zodpic, #pup {
 	display: flex;
-	width: 50%;
 	}
 	.despara {
 		display: flex;
 		margin: 5%;
 		max-width: 80vw;
+		margin-left: 27vw;
 	}
 
 	#marypop {
 	position: absolute;
 	left: 37%;
 	top: 73%;
-}
+	}
 
 	#zodlink {
-			position: absolute;
-	left: 37%;
-	top: 42%;
+		position: absolute;
+		left: 37%;
+		top: 42%;
 	}
 
 }
